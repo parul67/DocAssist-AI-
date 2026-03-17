@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAG Platform | Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-dot"></span>
+        <span>RAG PDF Studio</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Landing</a>
+        <a href="home.html">Home</a>
+        <a href="upload.html">Upload</a>
+        <a href="response.html">Response</a>
+      </nav>
+      <div class="auth-nav" data-auth-nav></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">Account Access</p>
+      <h1>Login To Continue</h1>
+      <p class="subtitle">Sign in to use upload and response pages.</p>
+    </section>
+
+    <section class="section auth-wrap">
+      <article class="panel auth-panel">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com" required>
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter password" required>
+          </div>
+          <button id="loginBtn" class="btn btn-primary" type="submit">Login</button>
+        </form>
+        <p id="loginStatus" class="status">Use your registered credentials.</p>
+        <p class="status">No account? <a class="link-inline" href="signup.html">Create one</a></p>
+      </article>
+    </section>
+
+    <p class="footer">Demo auth is local to your browser for this frontend prototype.</p>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RAG Platform | Landing</title>
+  <title>RAG Platform | Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -17,8 +17,8 @@
         <span>RAG PDF Studio</span>
       </a>
       <nav class="nav">
-        <a class="active" href="index.html">Landing</a>
-        <a href="home.html">Home</a>
+        <a href="index.html">Landing</a>
+        <a class="active" href="home.html">Home</a>
         <a href="upload.html">Upload</a>
         <a href="response.html">Response</a>
       </nav>
@@ -28,37 +28,37 @@
 
   <main class="container">
     <section class="hero">
-      <p class="eyebrow">AI-Powered Document QA</p>
-      <h1>Turn Any PDF Into A Searchable AI Assistant</h1>
+      <p class="eyebrow">Workflow Overview</p>
+      <h1>A Polished PDF Q&A Experience For Your RAG Backend</h1>
       <p class="subtitle">
-        Elegant workflow for upload, indexing, and contextual answers. Your latest document becomes the active knowledge source.
+        This frontend is organized into purpose-driven pages so users always know where they are in the journey.
       </p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="upload.html">Start Uploading</a>
-        <a class="btn btn-secondary" href="home.html">Explore Flow</a>
+        <a class="btn btn-primary" href="upload.html">Go To Upload</a>
+        <a class="btn btn-secondary" href="response.html">Open Response Page</a>
       </div>
     </section>
 
     <section class="section">
-      <h2>Why This UI</h2>
       <div class="grid-3">
         <article class="card">
-          <h3>Clean Retrieval Flow</h3>
-          <p>Upload replaces the active index so answers stay focused on the latest PDF.</p>
+          <h3>1. Landing</h3>
+          <p>Brand-first introduction with clear call-to-actions.</p>
         </article>
         <article class="card">
-          <h3>Professional Layout</h3>
-          <p>Premium palette, modern typography, and responsive sections for desktop and mobile.</p>
+          <h3>2. Upload</h3>
+          <p>Upload and index the latest PDF using your `/upload` endpoint.</p>
         </article>
         <article class="card">
-          <h3>Production Friendly</h3>
-          <p>Simple static frontend that can be hosted anywhere and pointed to your FastAPI backend.</p>
+          <h3>3. Response</h3>
+          <p>View generated answers and ask follow-up questions using `/ask`.</p>
         </article>
       </div>
     </section>
 
-    <p class="footer">Built for your current RAG backend endpoints: /upload and /ask</p>
+    <p class="footer">Use API base URL `http://127.0.0.1:8000` while running FastAPI locally.</p>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>

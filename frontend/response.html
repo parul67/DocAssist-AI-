@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAG Platform | Response</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-protected="true">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-dot"></span>
+        <span>RAG PDF Studio</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Landing</a>
+        <a href="home.html">Home</a>
+        <a href="upload.html">Upload</a>
+        <a class="active" href="response.html">Response</a>
+      </nav>
+      <div class="auth-nav" data-auth-nav></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">AI Response</p>
+      <h1>See The Latest Answer And Continue The Conversation</h1>
+      <p class="subtitle">
+        This page shows your most recent question and model response from the active indexed PDF.
+      </p>
+    </section>
+
+    <section class="section">
+      <article class="panel">
+        <h2>Latest Result</h2>
+        <div class="field">
+          <label>Question</label>
+          <div id="lastQuestion" class="response-box">No question asked yet.</div>
+        </div>
+        <div class="field">
+          <label>Answer</label>
+          <div id="lastAnswer" class="response-box">No response generated yet.</div>
+        </div>
+        <div id="metaInfo" class="meta">Upload and ask from the upload page to populate this section.</div>
+      </article>
+    </section>
+
+    <section class="section">
+      <article class="panel">
+        <h2>Ask Follow-Up</h2>
+        <div class="field">
+          <label for="apiBase">API Base URL</label>
+          <input id="apiBase" type="url" placeholder="http://127.0.0.1:8000" value="http://127.0.0.1:8000">
+        </div>
+        <form id="followUpForm">
+          <div class="field">
+            <label for="followUpQuestion">Question</label>
+            <textarea id="followUpQuestion" rows="4" placeholder="Ask a follow-up question..." required></textarea>
+          </div>
+          <button id="followUpBtn" class="btn btn-primary" type="submit">Ask Follow-Up</button>
+        </form>
+        <p id="followUpStatus" class="status">Ready.</p>
+      </article>
+    </section>
+
+    <p class="footer">Need a new document? Return to Upload page and re-index another PDF.</p>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="response.js"></script>
+</body>
+</html>
