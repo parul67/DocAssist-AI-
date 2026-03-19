@@ -1,0 +1,361 @@
+2026-03-18 16:17:18,536 | INFO | main | Incoming request: GET /health
+2026-03-18 16:17:18,537 | INFO | main | Completed request: GET /health -> 200
+2026-03-18 16:17:18,540 | INFO | httpx | HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-03-18 16:17:18,544 | INFO | main | Incoming request: POST /upload
+2026-03-18 16:17:18,548 | INFO | rag | Extracting text from 34489226e19f409fae2575eed084af0b_sample.pdf
+2026-03-18 16:17:18,559 | WARNING | pypdf._reader | incorrect startxref pointer(1)
+2026-03-18 16:17:18,559 | WARNING | pypdf._reader | parsing for Object Streams
+2026-03-18 16:17:18,567 | INFO | embeddings | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-18 16:17:18,568 | INFO | sentence_transformers.SentenceTransformer | Use pytorch device_name: cpu
+2026-03-18 16:17:18,570 | INFO | sentence_transformers.SentenceTransformer | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-03-18 16:17:19,496 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:17:19,586 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-18 16:17:19,907 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:17:19,990 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-18 16:17:20,963 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:17:21,307 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-18 16:17:21,564 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:17:21,614 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-18 16:17:21,947 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:17:22,015 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-18 16:17:22,868 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:17:22,925 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-18 16:17:23,199 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-18 16:17:23,446 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:17:23,449 | WARNING | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-18 16:17:23,499 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-18 16:17:24,378 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:17:24,416 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-18 16:17:24,672 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:17:24,762 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-18 16:17:25,978 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-18 16:17:26,245 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-18 16:17:26,712 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:17:26,815 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-18 16:17:27,155 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-18 16:17:27,287 | INFO | vectordb | Initialized new FAISS index with dimension 384
+2026-03-18 16:17:27,291 | INFO | vectordb | Indexed 1 new chunks. Total chunks: 1
+2026-03-18 16:17:27,291 | INFO | rag | Ingested 1 chunks from 34489226e19f409fae2575eed084af0b_sample.pdf
+2026-03-18 16:17:27,302 | ERROR | main | Upload processing failed: no such table: uploads
+Traceback (most recent call last):
+  File "D:\project\rag-ai-platform\rag-agent-chat\backend\main.py", line 118, in upload_pdf
+    save_upload_record(file_name=safe_name, stored_path=str(destination))
+  File "D:\project\rag-ai-platform\rag-agent-chat\backend\main.py", line 42, in save_upload_record
+    connection.execute(
+sqlite3.OperationalError: no such table: uploads
+2026-03-18 16:17:27,304 | INFO | main | Completed request: POST /upload -> 500
+2026-03-18 16:17:27,306 | INFO | httpx | HTTP Request: POST http://testserver/upload "HTTP/1.1 500 Internal Server Error"
+2026-03-18 16:17:27,311 | INFO | main | Incoming request: POST /chat
+2026-03-18 16:17:27,313 | INFO | graph | Query classified as knowledge_lookup
+2026-03-18 16:17:27,333 | INFO | vectordb | Retrieved 1 chunks for query
+2026-03-18 16:17:27,333 | INFO | graph | Context length after retrieval: 109
+2026-03-18 16:17:28,211 | ERROR | llm | Mistral API request failed: 401 Client Error: Unauthorized for url: https://api.mistral.ai/v1/chat/completions
+2026-03-18 16:17:28,214 | INFO | main | Completed request: POST /chat -> 200
+2026-03-18 16:17:28,219 | INFO | httpx | HTTP Request: POST http://testserver/chat "HTTP/1.1 200 OK"
+2026-03-18 16:19:42,059 | INFO | main | Application startup complete
+2026-03-18 16:19:42,061 | INFO | main | Incoming request: GET /health
+2026-03-18 16:19:42,061 | INFO | main | Completed request: GET /health -> 200
+2026-03-18 16:19:42,064 | INFO | httpx | HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-03-18 16:19:42,066 | INFO | main | Incoming request: POST /upload
+2026-03-18 16:19:42,068 | INFO | rag | Extracting text from 7912a25dbd7d4bbfb7ed8b1d5e1885b4_sample.pdf
+2026-03-18 16:19:42,071 | WARNING | pypdf._reader | incorrect startxref pointer(1)
+2026-03-18 16:19:42,071 | WARNING | pypdf._reader | parsing for Object Streams
+2026-03-18 16:19:42,074 | INFO | embeddings | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-18 16:19:42,077 | INFO | sentence_transformers.SentenceTransformer | Use pytorch device_name: cpu
+2026-03-18 16:19:42,077 | INFO | sentence_transformers.SentenceTransformer | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-03-18 16:19:43,090 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:19:43,182 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-18 16:19:43,501 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:19:43,583 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-18 16:19:43,911 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:19:43,984 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-18 16:19:44,234 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:19:44,324 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-18 16:19:44,565 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:19:44,567 | WARNING | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-18 16:19:44,650 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-18 16:19:44,898 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:19:44,941 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-18 16:19:45,231 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-18 16:19:45,475 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:19:45,524 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-18 16:19:46,164 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:19:46,206 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-18 16:19:46,450 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:19:46,546 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-18 16:19:46,797 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-18 16:19:47,036 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-18 16:19:47,449 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:19:47,493 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-18 16:19:47,783 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-18 16:19:47,847 | INFO | vectordb | Initialized new FAISS index with dimension 384
+2026-03-18 16:19:47,851 | INFO | vectordb | Indexed 1 new chunks. Total chunks: 1
+2026-03-18 16:19:47,851 | INFO | rag | Ingested 1 chunks from 7912a25dbd7d4bbfb7ed8b1d5e1885b4_sample.pdf
+2026-03-18 16:19:47,859 | INFO | main | Completed request: POST /upload -> 200
+2026-03-18 16:19:47,861 | INFO | httpx | HTTP Request: POST http://testserver/upload "HTTP/1.1 200 OK"
+2026-03-18 16:19:47,862 | INFO | main | Incoming request: POST /chat
+2026-03-18 16:19:47,864 | INFO | graph | Query classified as knowledge_lookup
+2026-03-18 16:19:47,890 | INFO | vectordb | Retrieved 1 chunks for query
+2026-03-18 16:19:47,890 | INFO | graph | Context length after retrieval: 109
+2026-03-18 16:19:48,712 | ERROR | llm | Mistral API request failed: 401 Client Error: Unauthorized for url: https://api.mistral.ai/v1/chat/completions
+2026-03-18 16:19:48,716 | INFO | main | Completed request: POST /chat -> 200
+2026-03-18 16:19:48,716 | INFO | httpx | HTTP Request: POST http://testserver/chat "HTTP/1.1 200 OK"
+2026-03-18 16:19:48,718 | INFO | main | Application shutdown complete
+2026-03-18 16:32:46,437 | INFO | main | Application startup complete
+2026-03-18 16:32:46,440 | INFO | main | Incoming request: POST /chat
+2026-03-18 16:32:46,442 | INFO | graph | Query classified as knowledge_lookup
+2026-03-18 16:32:46,442 | INFO | embeddings | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-18 16:32:46,444 | INFO | sentence_transformers.SentenceTransformer | Use pytorch device_name: cpu
+2026-03-18 16:32:46,444 | INFO | sentence_transformers.SentenceTransformer | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-03-18 16:32:47,201 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:32:47,238 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-18 16:32:47,490 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:32:47,530 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-18 16:32:47,785 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:32:47,919 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-18 16:32:48,154 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:32:48,154 | WARNING | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-18 16:32:48,187 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-18 16:32:48,450 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:32:48,485 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-18 16:32:48,742 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:32:48,876 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-18 16:32:49,134 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-18 16:32:49,397 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:32:49,466 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-18 16:32:49,868 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:32:49,965 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-18 16:32:50,221 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:32:50,357 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-18 16:32:50,620 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-18 16:32:50,857 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-18 16:32:51,250 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 16:32:51,287 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-18 16:32:51,553 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-18 16:32:51,597 | INFO | vectordb | Retrieved 1 chunks for query
+2026-03-18 16:32:51,598 | INFO | graph | Context length after retrieval: 109
+2026-03-18 16:32:53,236 | ERROR | llm | Mistral API request failed: 400 Client Error: Bad Request for url: https://api.mistral.ai/v1/chat/completions
+2026-03-18 16:32:53,238 | INFO | main | Completed request: POST /chat -> 200
+2026-03-18 16:32:53,238 | INFO | httpx | HTTP Request: POST http://testserver/chat "HTTP/1.1 200 OK"
+2026-03-18 16:32:53,238 | INFO | main | Application shutdown complete
+2026-03-18 20:54:10,690 | INFO | main | Application startup complete
+2026-03-18 20:54:10,690 | INFO | main | Incoming request: GET /health
+2026-03-18 20:54:10,690 | INFO | main | Completed request: GET /health -> 200
+2026-03-18 20:54:10,695 | INFO | httpx | HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-03-18 20:54:10,696 | INFO | main | Incoming request: POST /chat
+2026-03-18 20:54:10,697 | INFO | graph | Query classified as knowledge_lookup
+2026-03-18 20:54:10,697 | INFO | embeddings | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-18 20:54:10,700 | INFO | sentence_transformers.SentenceTransformer | Use pytorch device_name: cpu
+2026-03-18 20:54:10,700 | INFO | sentence_transformers.SentenceTransformer | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-03-18 20:54:11,727 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:54:11,807 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-18 20:54:12,056 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:54:12,138 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-18 20:54:12,394 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:54:12,449 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-18 20:54:12,781 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:54:12,827 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-18 20:54:13,085 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:54:13,149 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-18 20:54:13,402 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:54:13,457 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-18 20:54:13,713 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-18 20:54:14,011 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:54:14,066 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-18 20:54:14,523 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:54:14,575 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-18 20:54:14,868 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:54:14,952 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-18 20:54:15,275 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-18 20:54:15,551 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-18 20:54:16,017 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:54:16,059 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-18 20:54:16,330 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-18 20:54:16,476 | INFO | vectordb | Retrieved 1 chunks for query
+2026-03-18 20:54:16,478 | INFO | graph | Context length after retrieval: 109
+2026-03-18 20:54:17,336 | ERROR | llm | Mistral API request failed: 400 Client Error: Bad Request for url: https://api.mistral.ai/v1/chat/completions
+2026-03-18 20:54:17,343 | INFO | main | Completed request: POST /chat -> 200
+2026-03-18 20:54:17,343 | INFO | httpx | HTTP Request: POST http://testserver/chat "HTTP/1.1 200 OK"
+2026-03-18 20:54:17,343 | INFO | main | Application shutdown complete
+2026-03-18 20:55:38,168 | INFO | main | Application startup complete
+2026-03-18 20:55:38,170 | INFO | main | Incoming request: POST /chat
+2026-03-18 20:55:38,171 | INFO | graph | Query classified as knowledge_lookup
+2026-03-18 20:55:38,171 | INFO | embeddings | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-18 20:55:38,173 | INFO | sentence_transformers.SentenceTransformer | Use pytorch device_name: cpu
+2026-03-18 20:55:38,173 | INFO | sentence_transformers.SentenceTransformer | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-03-18 20:55:39,103 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:55:39,165 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-18 20:55:39,417 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:55:39,459 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-18 20:55:39,703 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:55:39,706 | WARNING | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-18 20:55:39,746 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-18 20:55:40,067 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:55:40,113 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-18 20:55:40,357 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:55:40,405 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-18 20:55:40,661 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:55:40,731 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-18 20:55:40,974 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-18 20:55:41,245 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:55:41,282 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-18 20:55:41,719 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:55:41,758 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-18 20:55:42,130 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:55:42,172 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-18 20:55:42,419 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-18 20:55:42,704 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-18 20:55:43,118 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 20:55:43,162 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-18 20:55:43,445 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-18 20:55:43,487 | INFO | vectordb | Retrieved 1 chunks for query
+2026-03-18 20:55:43,489 | INFO | graph | Context length after retrieval: 109
+2026-03-18 20:55:44,425 | INFO | llm | LLM response preview: The capital of France is **Paris**.
+2026-03-18 20:55:44,428 | INFO | main | Completed request: POST /chat -> 200
+2026-03-18 20:55:44,429 | INFO | httpx | HTTP Request: POST http://testserver/chat "HTTP/1.1 200 OK"
+2026-03-18 20:55:44,430 | INFO | main | Application shutdown complete
+2026-03-18 21:42:56,321 | INFO | main | Application startup complete
+2026-03-18 21:43:08,856 | INFO | main | Incoming request: GET /health
+2026-03-18 21:43:08,856 | INFO | main | Completed request: GET /health -> 200
+2026-03-18 21:43:34,222 | INFO | main | Incoming request: GET /health
+2026-03-18 21:43:34,223 | INFO | main | Completed request: GET /health -> 200
+2026-03-18 21:43:34,337 | INFO | main | Incoming request: GET /favicon.ico
+2026-03-18 21:43:34,337 | INFO | main | Completed request: GET /favicon.ico -> 404
+2026-03-18 21:43:45,477 | INFO | main | Incoming request: GET /docs
+2026-03-18 21:43:45,479 | INFO | main | Completed request: GET /docs -> 200
+2026-03-18 21:43:45,739 | INFO | main | Incoming request: GET /openapi.json
+2026-03-18 21:43:45,756 | INFO | main | Completed request: GET /openapi.json -> 200
+2026-03-18 21:44:24,994 | INFO | main | Incoming request: POST /upload
+2026-03-18 21:44:25,000 | INFO | rag | Extracting text from 1ec0258316dd48c19111140f0f197f73_Wheat_Comprehensive_Smart_Irrigation_Advisory.pdf
+2026-03-18 21:44:25,054 | INFO | embeddings | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-18 21:44:25,055 | INFO | sentence_transformers.SentenceTransformer | Use pytorch device_name: cpu
+2026-03-18 21:44:25,058 | INFO | sentence_transformers.SentenceTransformer | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-03-18 21:44:26,300 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 21:44:26,302 | WARNING | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-18 21:44:26,357 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-18 21:44:26,639 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 21:44:26,691 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-18 21:44:26,951 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 21:44:27,022 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-18 21:44:27,330 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 21:44:27,408 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-18 21:44:27,656 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 21:44:27,742 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-18 21:44:28,074 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 21:44:28,155 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-18 21:44:28,388 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-18 21:44:28,650 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 21:44:28,690 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-18 21:44:29,171 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 21:44:29,206 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-18 21:44:29,455 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 21:44:29,498 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-18 21:44:29,752 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-18 21:44:30,100 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-18 21:44:30,954 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 21:44:30,994 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-18 21:44:31,304 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-18 21:44:31,452 | INFO | vectordb | Indexed 1 new chunks. Total chunks: 2
+2026-03-18 21:44:31,452 | INFO | rag | Ingested 1 chunks from 1ec0258316dd48c19111140f0f197f73_Wheat_Comprehensive_Smart_Irrigation_Advisory.pdf
+2026-03-18 21:44:31,462 | INFO | main | Completed request: POST /upload -> 200
+2026-03-18 21:44:59,137 | INFO | main | Incoming request: POST /chat
+2026-03-18 21:44:59,144 | INFO | graph | Query classified as knowledge_lookup
+2026-03-18 21:44:59,184 | INFO | vectordb | Retrieved 2 chunks for query
+2026-03-18 21:44:59,184 | INFO | graph | Context length after retrieval: 1628
+2026-03-18 21:45:03,842 | INFO | llm | LLM response preview: Here’s a summary based on the provided context from the **Wheat Comprehensive Smart Irrigation Advisory** document:
+
+### **Summary: Smart Precision Irrigation Advisory for Wheat Crop**
+1. **Crop Duration**:
+   - Wheat crop duration ranges from **110–130 days**, depending on variety and agro-climatic
+2026-03-18 21:45:03,845 | INFO | main | Completed request: POST /chat -> 200
+2026-03-18 21:45:33,099 | INFO | main | Incoming request: POST /chat
+2026-03-18 21:45:33,103 | INFO | graph | Query classified as knowledge_lookup
+2026-03-18 21:45:33,165 | INFO | vectordb | Retrieved 2 chunks for query
+2026-03-18 21:45:33,165 | INFO | graph | Context length after retrieval: 1628
+2026-03-18 21:45:35,189 | INFO | llm | LLM response preview: Wheat crop duration ranges from **110–130 days** depending on the variety and agro-climatic conditions.
+2026-03-18 21:45:35,192 | INFO | main | Completed request: POST /chat -> 200
+2026-03-19 10:51:37,285 | INFO | main | Incoming request: GET /documents
+2026-03-19 10:51:37,291 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 10:51:37,293 | INFO | httpx | HTTP Request: GET http://testserver/documents "HTTP/1.1 200 OK"
+2026-03-19 11:36:00,484 | INFO | main | Application startup complete
+2026-03-19 11:36:26,818 | INFO | main | Application startup complete
+2026-03-19 11:36:26,820 | INFO | main | Application shutdown complete
+2026-03-19 11:36:38,254 | INFO | main | Incoming request: GET /health
+2026-03-19 11:36:38,254 | INFO | main | Completed request: GET /health -> 200
+2026-03-19 11:39:51,849 | INFO | main | Incoming request: GET /documents
+2026-03-19 11:39:51,855 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 11:39:51,859 | INFO | main | Incoming request: GET /documents
+2026-03-19 11:39:51,860 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 11:40:07,420 | INFO | main | Incoming request: OPTIONS /upload
+2026-03-19 11:40:07,420 | INFO | main | Completed request: OPTIONS /upload -> 405
+2026-03-19 11:45:27,900 | INFO | main | Incoming request: OPTIONS /upload
+2026-03-19 11:45:27,904 | INFO | main | Completed request: OPTIONS /upload -> 405
+2026-03-19 11:46:15,888 | INFO | main | Application shutdown complete
+2026-03-19 11:46:27,370 | INFO | main | Application startup complete
+2026-03-19 11:46:53,228 | INFO | main | Incoming request: OPTIONS /upload
+2026-03-19 11:46:53,228 | INFO | main | Completed request: OPTIONS /upload -> 200
+2026-03-19 11:55:28,364 | INFO | main | Incoming request: GET /documents
+2026-03-19 11:55:28,369 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 11:55:28,372 | INFO | main | Incoming request: GET /documents
+2026-03-19 11:55:28,374 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 11:55:28,934 | INFO | main | Incoming request: GET /documents
+2026-03-19 11:55:28,936 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 11:55:28,938 | INFO | main | Incoming request: GET /documents
+2026-03-19 11:55:28,942 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 11:55:34,784 | INFO | main | Incoming request: GET /documents
+2026-03-19 11:55:34,784 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 11:55:34,789 | INFO | main | Incoming request: GET /documents
+2026-03-19 11:55:34,789 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 12:01:41,070 | INFO | main | Incoming request: GET /documents
+2026-03-19 12:01:41,070 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 12:01:41,089 | INFO | main | Incoming request: GET /documents
+2026-03-19 12:01:41,089 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 12:02:06,731 | INFO | main | Application shutdown complete
+2026-03-19 12:02:18,505 | INFO | main | Application startup complete
+2026-03-19 12:02:44,436 | INFO | main | Incoming request: GET /documents
+2026-03-19 12:02:44,444 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 12:03:25,421 | INFO | main | Incoming request: GET /documents
+2026-03-19 12:03:25,423 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 12:03:25,429 | INFO | main | Incoming request: GET /documents
+2026-03-19 12:03:25,436 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 12:03:42,498 | INFO | main | Incoming request: OPTIONS /upload
+2026-03-19 12:03:42,498 | INFO | main | Completed request: OPTIONS /upload -> 200
+2026-03-19 12:03:42,498 | INFO | main | Incoming request: POST /upload
+2026-03-19 12:03:42,508 | INFO | rag | Extracting text from 56bc34ca02254d2894cd4f967e82208c_AI Engineer Intern Assignment 1.pdf
+2026-03-19 12:03:42,670 | INFO | embeddings | Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-03-19 12:03:42,672 | INFO | sentence_transformers.SentenceTransformer | Use pytorch device_name: cpu
+2026-03-19 12:03:42,672 | INFO | sentence_transformers.SentenceTransformer | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2026-03-19 12:03:43,583 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-19 12:03:43,583 | WARNING | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-19 12:03:43,674 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-19 12:03:44,002 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-19 12:03:44,050 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-19 12:03:44,308 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-19 12:03:44,405 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-03-19 12:03:44,664 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-03-19 12:03:44,714 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md "HTTP/1.1 200 OK"
+2026-03-19 12:03:45,001 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-19 12:03:45,048 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json "HTTP/1.1 200 OK"
+2026-03-19 12:03:45,321 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-19 12:03:45,370 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-03-19 12:03:45,646 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-03-19 12:03:45,911 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-19 12:03:45,982 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-19 12:03:46,472 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-19 12:03:46,549 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json "HTTP/1.1 200 OK"
+2026-03-19 12:03:46,822 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-19 12:03:46,871 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-19 12:03:47,157 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-19 12:03:47,460 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-19 12:03:47,869 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-19 12:03:47,969 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-03-19 12:03:48,282 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-03-19 12:03:48,477 | INFO | vectordb | Indexed 2 new chunks. Total chunks: 4
+2026-03-19 12:03:48,479 | INFO | rag | Ingested 2 chunks from 56bc34ca02254d2894cd4f967e82208c_AI Engineer Intern Assignment 1.pdf
+2026-03-19 12:03:48,484 | INFO | main | Completed request: POST /upload -> 200
+2026-03-19 12:03:48,491 | INFO | main | Incoming request: GET /documents
+2026-03-19 12:03:48,495 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 12:04:10,476 | INFO | main | Incoming request: GET /chat/stream
+2026-03-19 12:04:10,477 | INFO | main | Completed request: GET /chat/stream -> 404
+2026-03-19 12:04:50,648 | INFO | main | Incoming request: GET /chat/stream
+2026-03-19 12:04:50,649 | INFO | main | Completed request: GET /chat/stream -> 404
