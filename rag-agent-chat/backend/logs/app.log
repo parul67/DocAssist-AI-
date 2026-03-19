@@ -359,3 +359,45 @@ sqlite3.OperationalError: no such table: uploads
 2026-03-19 12:04:10,477 | INFO | main | Completed request: GET /chat/stream -> 404
 2026-03-19 12:04:50,648 | INFO | main | Incoming request: GET /chat/stream
 2026-03-19 12:04:50,649 | INFO | main | Completed request: GET /chat/stream -> 404
+2026-03-19 12:05:59,123 | INFO | main | Incoming request: GET /documents
+2026-03-19 12:05:59,125 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 12:06:04,112 | INFO | main | Incoming request: GET /documents
+2026-03-19 12:06:04,112 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 12:06:50,508 | INFO | main | Incoming request: GET /documents
+2026-03-19 12:06:50,517 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 12:06:50,519 | INFO | main | Incoming request: GET /documents
+2026-03-19 12:06:50,523 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 12:06:57,564 | INFO | main | Incoming request: GET /documents
+2026-03-19 12:06:57,569 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 12:06:57,572 | INFO | main | Incoming request: GET /documents
+2026-03-19 12:06:57,575 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 12:07:16,768 | INFO | main | Incoming request: GET /chat/stream
+2026-03-19 12:07:16,769 | INFO | main | Completed request: GET /chat/stream -> 404
+2026-03-19 12:07:16,781 | INFO | main | Incoming request: OPTIONS /chat
+2026-03-19 12:07:16,781 | INFO | main | Completed request: OPTIONS /chat -> 200
+2026-03-19 12:07:16,786 | INFO | main | Incoming request: POST /chat
+2026-03-19 12:07:16,789 | INFO | graph | Query classified as knowledge_lookup
+2026-03-19 12:07:16,821 | INFO | vectordb | Retrieved 4 chunks for query
+2026-03-19 12:07:16,824 | INFO | graph | Context length after retrieval: 6386
+2026-03-19 12:07:18,272 | INFO | llm | LLM response preview: Based on the provided context, wheat takes **110–130 days** to harvest, depending on the variety and agro-climatic conditions.
+2026-03-19 12:07:18,277 | INFO | main | Completed request: POST /chat -> 200
+2026-03-19 12:08:03,443 | INFO | main | Incoming request: GET /chat/stream
+2026-03-19 12:08:03,443 | INFO | main | Completed request: GET /chat/stream -> 404
+2026-03-19 12:08:03,455 | INFO | main | Incoming request: POST /chat
+2026-03-19 12:08:03,458 | INFO | graph | Query classified as knowledge_lookup
+2026-03-19 12:08:03,509 | INFO | vectordb | Retrieved 4 chunks for query
+2026-03-19 12:08:03,511 | INFO | graph | Context length after retrieval: 6386
+2026-03-19 12:08:06,252 | INFO | llm | LLM response preview: Based on the provided context, here are the fertilizer recommendations for wheat crop based on growth stages:
+
+1. **Sowing (Basal)**:
+   - **DAP/NPK**: N: 60 kg/ha, P: 60 kg/ha, K: 40 kg/ha
+   - **Purpose**: Root establishment
+
+2. **CRI (Crown Root Initiation) Stage**:
+   - **Urea**: 30 kg N/ha
+   -
+2026-03-19 12:08:06,257 | INFO | main | Completed request: POST /chat -> 200
+2026-03-19 12:08:24,409 | INFO | main | Incoming request: GET /documents
+2026-03-19 12:08:24,410 | INFO | main | Completed request: GET /documents -> 200
+2026-03-19 12:08:25,330 | INFO | main | Incoming request: GET /documents
+2026-03-19 12:08:25,331 | INFO | main | Completed request: GET /documents -> 200
